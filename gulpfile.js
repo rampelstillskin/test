@@ -39,7 +39,7 @@ gulp.task("minify", () =>
 
 gulp.task("images", () =>
 	gulp
-		.src("app/ims/**/*.{png,svg,jpg}")
+		.src("app/img/**/*.{png,svg,jpg}")
 		.pipe(
 			imagemin([
 				imagemin.optipng({ optimizationLevel: 3 }),
@@ -47,7 +47,7 @@ gulp.task("images", () =>
 				imagemin.svgo(),
 			])
 		)
-		.pipe(gulp.dest("app/images"))
+		.pipe(gulp.dest("app/img"))
 );
 
 gulp.task("serve", () => {
@@ -66,7 +66,7 @@ gulp.task("copy", () =>
 			[
 				"app/*.html",
 				"app/fonts/**/*.woff",
-				"app/images/**",
+				"app/img/**",
 				"app/js/**",
 				"app/css/*.css",
 			],
