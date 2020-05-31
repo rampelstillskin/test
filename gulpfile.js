@@ -39,7 +39,7 @@ gulp.task("minify", () =>
 
 gulp.task("images", () =>
 	gulp
-		.src("app/img/**/*.{png,svg,jpg}")
+		.src("app/img/*.{png,svg,jpg}")
 		.pipe(
 			imagemin([
 				imagemin.optipng({ optimizationLevel: 3 }),
