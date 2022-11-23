@@ -8,7 +8,7 @@
 		"imagemin": "^7.0.0"
 	},
 	"devDependencies": {
-		"browser-sync": "^2.26.7",
+		"browser-sync": "^2.27.10",
 		"eslint": "^5.16.0",
 		"eslint-config-airbnb-base": "^13.2.0",
 		"eslint-plugin-import": "^2.18.2",
